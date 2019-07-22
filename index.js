@@ -3,12 +3,21 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.get('/users', (req, res) => {
+//CORS
+
+function cors(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    console.log('Mon middleware')
+    next();
+}
+
+app.get('/users', cors, (req, res) => {
     const users = require('./fixtures').users;
     res.status(200).send({ users });
 })
 
-app.get('/user/:id', (req, res) => {
+app.get('/users/:id', cors, (req, res) => {
     const userId = req.params.id;
     const user = require('./fixtures').users[userId];
 
