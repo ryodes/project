@@ -1,0 +1,31 @@
+{
+    "users":[
+        {
+            "firstname": "Bertrand",
+            "lastname": "Chapo",
+            "pseudo": "beber",
+            "email": "beber@mail.fr",
+            "password": "123456",
+            "role": "ROLE_USER",
+            "image": ""
+        },
+        {
+            "firstname": "Marie",
+            "lastname": "Curi",
+            "pseudo": "cucu",
+            "email": "cucu@mail.fr",
+            "password": "623145",
+            "role": "ROLE_USER",
+            "image": ""
+        },
+        {
+            "firstname": "adretael",
+            "lastname": "chapi",
+            "pseudo": "chap",
+            "email": "chap@mail.fr",
+            "password": "654321",
+            "role": "ROLE_USER",
+            "image": ""
+        }
+    ]
+}
